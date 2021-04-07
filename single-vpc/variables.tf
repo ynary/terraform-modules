@@ -17,4 +17,3 @@ variable "enable_internet_gateway" {
 variable "enable_nat_gateway" {
   type = boolean
 }
-
