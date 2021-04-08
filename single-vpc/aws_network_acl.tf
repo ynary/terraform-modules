@@ -1,6 +1,6 @@
 resource "aws_network_acl" "this" {
   vpc_id     = aws_vpc.this.id
-  subnet_ids = module.subnet.id
+  subnet_ids = module.subnet.0.aws_subnet_id
 
   egress {
     protocol   = "tcp"
@@ -18,10 +18,5 @@ resource "aws_network_acl" "this" {
     cidr_block = "10.3.0.0/18"
     from_port  = 80
     to_port    = 80
-  }
-
-  tags {
-    terraform         = true
-    creation_occasion = var.creation_occasion
   }
 }

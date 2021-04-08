@@ -1,6 +1,6 @@
 module "subnet" {
-  for_each                = var.subnet_cidr_list
-  source                  = "subnet"
+  for_each                = toset(var.subnet_cidr_list)
+  source                  = "./subnet"
   cidr_block              = each.value
   enable_nat_gateway      = var.enable_nat_gateway
   creation_occasion       = var.creation_occasion
