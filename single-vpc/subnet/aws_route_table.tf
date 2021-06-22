@@ -14,6 +14,6 @@ resource "aws_route_table" "this" {
 
   tags {
     terraform         = true
-    creation_occasion = var.creation_occasion
+    creation_occasion = var.purpose
   }
 }

@@ -5,6 +5,6 @@ resource "aws_nat_gateway" "this" {
 
   tags {
     terraform         = true
-    creation_occasion = var.creation_occasion
+    creation_occasion = var.purpose
   }
 }

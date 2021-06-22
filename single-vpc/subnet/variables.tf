@@ -1,4 +1,4 @@
-variable "creation_occasion" {
+variable "purpose" {
   type = string
 }
 
@@ -7,6 +7,10 @@ variable "vpc_id" {
 }
 
 variable "cidr_block" {
+  type = string
+}
+
+variable "availability_zone" {
   type = string
 }
 
@@ -19,4 +23,9 @@ variable "enable_internet_gateway" {
 }
 
 variable "aws_internet_gateway" {
+  type = bool
+}
+
+variable "map_public_ip_on_launch" {
+  type = bool
 }
