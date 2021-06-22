@@ -12,9 +12,6 @@ variable "subnet_setting_list" {
     availability_zone = string
     map_public_ip_on_launch = bool
   })
-  default = object({
-    map_public_ip_on_launch = false
-  })
 }
 
 variable "enable_internet_gateway" {
