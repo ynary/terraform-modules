@@ -22,6 +22,6 @@ resource "aws_network_acl" "this" {
 
   tags {
     terraform         = true
-    creation_occasion = var.creation_occasion
+    creation_occasion = var.purpose
   }
 }
