@@ -15,9 +15,9 @@ variable "subnet_setting_list" {
 }
 
 variable "enable_internet_gateway" {
-  type = boolean
+  type = bool
 }
 
 variable "enable_nat_gateway" {
-  type = boolean
+  type = bool
 }
