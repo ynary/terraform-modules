@@ -1,6 +1,6 @@
 module "subnet" {
   for_each                = var.subnet_setting_list
-  source                  = "subnet"
+  source                  = "./subnet"
   cidr_block              = each.value.cidr_block
   enable_nat_gateway      = var.enable_nat_gateway
   vpc_id                  = aws_vpc.this.id
